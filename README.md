@@ -27,6 +27,7 @@ This is our revalida project for the Google Cloud Platform Developer Stint of th
 
     ```shell
     cd doggo-classifier-ui/
+    npm install package.json
     gatsby develop
     ```
 

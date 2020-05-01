@@ -7,6 +7,7 @@ export default () => (
     <div style={{ color: `purple` }}>
         <h1>Hello Gatsby!</h1>
         <p>What a world. I will be a doggo classifier.</p>
+        <p> Created a develop branch </p>
     </div>
   </div>
 )

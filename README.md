@@ -6,9 +6,9 @@ This is our revalida project for the Google Cloud Platform Developer Stint of th
 
 ## 💻 Contributors
 
-AI/ML - [Kendrick Tan](https://github.com/saibunny)
-Architecture & Backend - [Faust Roxas](https://github.com/randito-roxasjr)
-Frontend - [Xyza Rivera](https://github.com/xyzarivera)
+- AI/ML - [Kendrick Tan](https://github.com/saibunny)
+- Architecture & Backend - [Faust Roxas](https://github.com/randito-roxasjr)
+- Frontend - [Xyza Rivera](https://github.com/xyzarivera)
 
 ## 🚀 Quick start
 
@@ -17,7 +17,7 @@ Frontend - [Xyza Rivera](https://github.com/xyzarivera)
     Use the Gatsby CLI to create a new site, specifying this repository.
 
     ```shell
-    # create a new Gatsby site using the hello-world starter
+    # create a new Gatsby site
     gatsby new doggo-classifier-ui https://github.com/xyzarivera/doggo-classifier-ui
     ```
 

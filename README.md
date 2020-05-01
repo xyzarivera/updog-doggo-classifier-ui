@@ -8,7 +8,7 @@ This is our revalida project for the Google Cloud Platform Developer Stint of th
 
 - AI/ML - [Kendrick Tan](https://github.com/saibunny)
 - Architecture & Backend - [Faust Roxas](https://github.com/randito-roxasjr)
-- Frontend - [Xyza Rivera](https://github.com/xyzarivera)
+- Frontend - [Xyza Rivera](http://xyzarivera.com)
 
 ## 🚀 Quick start
 

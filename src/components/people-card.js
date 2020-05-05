@@ -14,15 +14,19 @@ export default (props) => (
             </div>
             <div class="flex items-center mt-4 text-gray-700">
                 <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
-                    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"/>
-                </svg>
-                <h1 class="px-2 text-sm">{props.git}</h1>
-            </div>
-            <div class="flex items-center mt-4 text-gray-700">
-                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
                     <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
                 </svg>
-                <h1 class="px-2 text-sm">{props.email}</h1>
+                <a href={`mailto:${props.email}`}>
+                    <h1 class="px-2 text-sm">{props.email}</h1>
+                </a>
+            </div>
+            <div class="flex items-center mt-4 text-gray-700">
+                <img src="https://img.icons8.com/material-sharp/24/000000/github.png"/>
+                <h1 class="px-2 text-sm">
+                    <a href={props.git} rel="noopener noreferrer" target="_blank"> 
+                        {props.gitname}
+                    </a>
+                </h1>
             </div>
         </div>
     </div>

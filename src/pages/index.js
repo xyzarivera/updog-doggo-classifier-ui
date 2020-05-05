@@ -1,12 +1,12 @@
 import React from "react"
-import Navbar from "../components/navbar"
+import GithubCorner from "../components/github-corner"
 import App from "../containers/app"
 import Details from "../containers/details"
 import Contributors from "../containers/contributors"
 
 export default () => (
     <div>
-        <Navbar/>
+        <GithubCorner url="https://github.com/xyzarivera/doggo-classifier-ui"/>
         <App/>
         <Details/>
         <Contributors/>

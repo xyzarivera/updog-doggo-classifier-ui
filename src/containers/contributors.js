@@ -10,7 +10,10 @@ export default () => (
     <div class="bg-gray-200">
         <Layout>
             <h1 class="font-semibold text-center text-xl md:text-3xl leading-tight">Contributors</h1>
-            <div class="justify-between md:flex mb-6">
+            <p class="text-gray-700 text-base md:text-xl text-center">
+                This web app is our revalida for the Google Cloud Platform Developer Stint of the AC2E program.
+            </p>
+            <div class="justify-between md:flex mb-6 py-4">
                 <PeopleCard class="md:w1/3"
                     imgsrc={dp_ken}
                     name="Kendrick Tan" 

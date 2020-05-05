@@ -1,4 +1,6 @@
 function uploadImage(){	
+	
+	var firebase = require("firebase/app");
 
 	// Image file references
 	var ref = firebase.storage().ref();
@@ -14,7 +16,7 @@ function uploadImage(){
 	.then(snapshot => snapshot.ref.getDownloadURL())
 	.then((url) => {
 		console.log(url);
-		document.querySelector('#ImageHTMLid').src = url;	// Grabbing the image url and assigning it to a html element
+		document.querySelector('#ImageHTMLid').src = url;	// Grabbing the image url and assigning it to an html element
 	})
 		.catch(console.error);
 

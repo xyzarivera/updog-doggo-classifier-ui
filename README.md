@@ -1,14 +1,14 @@
-# 🐶 Doggo Classifier
+# 🐶 BORK!
 
-Doggo Classifier is a web-based computer vision application that identifies the breed of a dog in an uploaded photo.
+**BORK!** is a web-based computer vision application that identifies the breed of a dog in an uploaded photo.
 
-This is our revalida project for the Google Cloud Platform Developer Stint of the AC2E program.
+This is our revalida for the Google Cloud Platform Developer Stint of the AC2E program.
 
 ## 💻 Contributors
 
-- AI/ML - [Kendrick Tan](https://github.com/saibunny)
-- Architecture & Backend - [Faust Roxas](https://github.com/randito-roxasjr)
-- Frontend - [Xyza Rivera](http://xyzarivera.com)
+- [Kendrick Tan](https://github.com/saibunny) - AI/ML & Backend
+- [Faust Roxas](https://github.com/faustroxas) - Architecture & Backend
+- [Xyza Rivera](http://xyzarivera.com) - Frontend & Design
 
 ## 🚀 Quick start
 
@@ -39,10 +39,14 @@ This is our revalida project for the Google Cloud Platform Developer Stint of th
 
 ## 🧐 What's inside?
 
-### Frontend
+### GCP & Firebase
 
-Frontend is built using GatsbyJS, a React-based, GraphQL powered, static site generator. It's CI/CD is built using GCP Cloud Build and is hosted at Firebase.
+Application Frontend is deployed in Firebase Hosting, while Backend Services are deployed in the Google Cloud Platform.
 
-### AI/ML - Computer Vision
+### GCP AutoML Vision
 
-An AI model is trained using GCP AutoML Vision with a dog classification dataset.
+The Doggo AI classifier is trained using GCP's AutoML Vision with a dog breed dataset containing 9,229 labeled images.
+
+### GastbyJS
+
+Application Frontend is built using GatsbyJS. It is a React-based, GraphQL powered, static site generator.

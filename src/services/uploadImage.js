@@ -1,3 +1,4 @@
+// PLEASE MOVE the <script></script> to the <body></body> of the web app
 <script src="/__/firebase/7.14.2/firebase-storage.js">
 
   var firebase = require("firebase/app");
@@ -25,7 +26,6 @@
 
   // Wait for value to change in input
   fileButton.addEventListener('change', function(e){
-    alert("HERE");
     var file = e.target.files[0];
     //var file = document.getElementById('image');
 

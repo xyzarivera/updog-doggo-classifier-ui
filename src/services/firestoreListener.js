@@ -1,15 +1,15 @@
-function firestoreListener(){	
+function firestoreListener(){
 
-	const db = admin.firestore();
+	var file = document.querySelector('#image')	
+	var db = admin.firestore();
 
-
-	let doc = db.collection('cities').doc('SF');
-
-	let observer = doc.onSnapshot(borkResult => {
-  		console.log(`Received doc snapshot: ${borkResult}`);
-		// HANDLE RETURNED DATA
-	}, err => {
-  		console.log(`Encountered error: ${err}`);
-	});
+	db.collection("dog_classification").where("gs_url", "==", "gs://gcp-revalida-a.appspot.com/"+file.name)
+	    .onSnapshot(function(snapshot) {
+	        snapshot.docChanges().forEach(function(change) {
+	            if (change.type === "added") {
+	                console.log("Dog Breed: ", change.doc.data());
+	            }
+	        });
+	    });
 
 }

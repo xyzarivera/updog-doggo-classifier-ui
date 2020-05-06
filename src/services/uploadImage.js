@@ -1,65 +1,52 @@
-var firebase = require("firebase/app");
-var storage = require("firebase/storage");
+<script src="/__/firebase/7.14.2/firebase-storage.js">
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA_kfc957r8sqwUNglVmS-K37noSWeasg8",
-  authDomain: "firstprojectgcp-271503.firebaseapp.com",
-  databaseURL: "https://firstprojectgcp-271503.firebaseio.com",
-  projectId: "firstprojectgcp-271503",
-  storageBucket: "firstprojectgcp-271503.appspot.com",
-  messagingSenderId: "104336835256",
-  appId: "1:104336835256:web:ff3444ebaa143f9934ea4d",
-  measurementId: "G-1ZMV72HL5P"
-};
+  var firebase = require("firebase/app");
+  var storage = require("firebase/storage");
 
-firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase App
+  const firebaseConfig = {
+    apiKey: "AIzaSyDQYWlHs1FCvUR4K6PWlhbEX4Q3baUG_ds",
+    authDomain: "gcp-revalida-a.firebaseapp.com",
+    databaseURL: "https://gcp-revalida-a.firebaseio.com",
+    projectId: "gcp-revalida-a",
+    storageBucket: "gcp-revalida-a.appspot.com",
+    messagingSenderId: "736552925421",
+    appId: "1:736552925421:web:1a4a2d1b318ad46b4874e4",
+    measurementId: "G-Q2CCPPDBKH"
+  };
+  firebase.initializeApp(firebaseConfig);
+  //--------------------------------------------------------------------------------------
 
-// Image file references
-var ref = firebase.storage().ref();
+  // Replace with Loading bar id
+  var uploader = document.getElementById('uploader');
 
-// Please replace with the image selector id
-var file = 'dog.jpeg'
-//var file = document.getElementById("image").files[0];
+  // Replace Selector with ID of <input type="file">
+  var fileButton = document.getElementById('fileButton');
 
-// Upload file and metadata to the object 'images/mountains.jpg'
-var uploadTask = storageRef.child(file.name).put(file, metadata);
+  // Wait for value to change in input
+  fileButton.addEventListener('change', function(e){
+    alert("HERE");
+    var file = e.target.files[0];
+    //var file = document.getElementById('image');
 
-// Listen for state changes, errors, and completion of the upload.
-uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
-  function(snapshot) {
-    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    console.log('Upload is ' + progress + '% done');
-    switch (snapshot.state) {
-      case firebase.storage.TaskState.PAUSED: // or 'paused'
-        console.log('Upload is paused');
-        break;
-      case firebase.storage.TaskState.RUNNING: // or 'running'
-        console.log('Upload is running');
-        break;
-    }
-  }, function(error) {
-
-  // A full list of error codes is available at
-  // https://firebase.google.com/docs/storage/web/handle-errors
-  switch (error.code) {
-    case 'storage/unauthorized':
-      // User doesn't have permission to access the object
-      break;
-
-    case 'storage/canceled':
-      // User canceled the upload
-      break;
-
-    ...
-
-    case 'storage/unknown':
-      // Unknown error occurred, inspect error.serverResponse
-      break;
-  }
-}, function() {
-  // Upload completed successfully, now we can get the download URL
-  uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-    console.log('File available at', downloadURL);
+    // Name and Upload file
+    var storageRef = firebase.storage().ref('img/'+file.name); 
+    
+    var uploadTask = storageRef.put(file);
+    
+    // Listen for state changes, errors, and completion of the upload.
+    uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
+      function(snapshot) {
+        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        uploader.value = progress;
+        console.log('Upload is ' + progress + '% done');
+      }, function() {
+      // Upload completed successfully, now we can get the download URL
+      uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+        console.log('File available at', downloadURL);
+      });
+    });
   });
-});
+
+</script>

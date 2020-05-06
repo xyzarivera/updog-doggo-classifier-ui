@@ -1,4 +1,5 @@
 // PLEASE MOVE the <script></script> to the <body></body> of the web app
+// Better to use EventListener instead of Form submission 
 <script src="/__/firebase/7.14.2/firebase-storage.js">
 
   var firebase = require("firebase/app");

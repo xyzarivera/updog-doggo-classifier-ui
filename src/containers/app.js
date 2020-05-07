@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import Layout from "../components/layout"
 import logo from "../assets/logo.png"
 import {storage} from "../firebase/firebase"
+import "../styles/global.css"
 import axios from 'axios'
 
 class App extends Component {
@@ -78,13 +79,13 @@ class App extends Component {
 
     render() {
         return (
-            <div class=" flex w-full h-screen text-center items-center">
+            <div class="bg-color-whiteish add-padding-top flex w-full h-screen text-center items-center">
             <Layout>
-                <div class="flex px-8 mb-6">
-                    <div class="flex justify-center md:w1/3 px-4">
-                        <img class="justify-center" alt='UPDOG' width="300rem" height="auto" src={logo} />
+                <div class="flex flex-wrap px-8 mb-6">
+                    <div class="flex justify-center md:w-1/3 px-4">
+                        <img class="logo-size" alt='UPDOG' src={logo} />
                     </div>
-                    <div class="md:w2/3 text-left">
+                    <div class="md:w-2/3 text-left">
                         <h1 class="font-bold text-2xl md:text-5xl leading-tight">HENLO FREN!</h1>
                         <p class="text-gray-700 text-base md:text-xl">
                             Let me guess your doggo breed.
@@ -96,7 +97,7 @@ class App extends Component {
                     </div>
                 </div>
                 <form class="px-6 py-4">
-                    <div class="bg-gray-100 py-4">
+                    <div class="bg-color-whiteish-darker rounded-corners py-4">
                         <div>
                             <div></div>
                             <label class="block text-gray-500 font-bold">

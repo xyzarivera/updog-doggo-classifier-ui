@@ -3,7 +3,7 @@ import React from "react"
 export default (props) => (
     <div class="max-w-sm overflow-hidden my-4">
         <div class="flex justify-center">
-            <img class="justify-center" src={props.imgsrc} alt="logo"/>
+            <img class="justify-center product-image" src={props.imgsrc} alt="logo"/>
         </div>
         <div class="py-4 px-6">
             <h1 class="text-2xl font-semibold">{props.name}</h1>

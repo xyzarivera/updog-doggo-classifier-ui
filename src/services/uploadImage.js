@@ -32,5 +32,3 @@ fileButton.addEventListener('change', function(e){
       });
     });
   });
-
-</script>

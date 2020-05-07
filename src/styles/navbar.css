@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #d56756;
+}
+
+.smaller {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+}
+
+.gitna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

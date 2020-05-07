@@ -1,13 +1,13 @@
-
 import React from "react"
 import Layout from "../components/layout"
 import PeopleCard from "../components/people-card"
 import dp_xyza from "../assets/dp_xyza.jpg"
 import dp_ken from "../assets/dp_ken.jpg"
 import dp_faust from "../assets/dp_faust.jpg"
+import "../styles/global.css"
 
 export default () => (
-    <div class="bg-gray-200">
+    <div class="bg-color-whiteish">
         <Layout>
             <h1 class="font-semibold text-center text-xl md:text-3xl leading-tight">Contributors</h1>
             <p class="text-gray-700 text-base md:text-xl text-center">

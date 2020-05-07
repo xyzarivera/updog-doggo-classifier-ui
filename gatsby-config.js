@@ -5,7 +5,10 @@
  */
 
 module.exports = {
+    siteMetadata: {
+    title: `UPDOG`,
+    },
     plugins: [
-        'gatsby-plugin-postcss',
+        'gatsby-plugin-postcss'
     ]
 }

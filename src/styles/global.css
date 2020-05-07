@@ -9,3 +9,39 @@
     and (max-device-width : 480px){
      .mobileHide { display: none;}
   }
+
+.logo-size {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bg-color-whiteish {
+    background-color: #f4f1e6;
+}
+
+.bg-color-whiteish-darker {
+    background-color: #eae1c7;
+}
+f4f1e6
+
+.bg-color-reddish {
+    background-color: #d56756;
+}
+
+.test-bg {
+    --bg-opacity: 1;
+    background-color: #d56756;
+    background-color: rgba(213, 103, 86, var(--bg-opacity));
+}
+
+.add-padding-top {
+    padding-top: 50px;
+}
+
+.rounded-corners {
+    border-radius: 25px;
+}
+
+.dark-reddish-text {
+    color: #5a2519;
+}

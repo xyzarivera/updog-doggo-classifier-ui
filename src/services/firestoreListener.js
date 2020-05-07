@@ -33,6 +33,7 @@ function readDataStore(gs_url){
 		console.log(results);
 		
 		// Do frontend stuff here
+		// Access objects using results.[0].<object_name>
 	}
 
 	runQuery();

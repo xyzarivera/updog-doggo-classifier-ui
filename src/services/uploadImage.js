@@ -26,14 +26,11 @@ fileButton.addEventListener('change', function(e){
       uploader.value = progress;
       console.log('Upload is ' + progress + '% done');
     }, function() {
-    // Upload completed successfully, now we can get the download URL
-    uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+      // Upload completed successfully, now we can get the download URL
+      uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
       console.log('File available at', downloadURL);
+      });
     });
   });
-<<<<<<< HEAD
-});
-=======
 
 </script>
->>>>>>> 3aa0ca8cee7d195bf57c48d3f92dbb7bfeff8065

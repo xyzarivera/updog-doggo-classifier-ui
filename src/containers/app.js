@@ -85,7 +85,7 @@ class App extends Component {
 
         if (breed!="") {
             if (breed == "Unknown/Unclassified object") {
-                header == "You are no doggo!"
+                header = "You are no doggo!"
             } else {
             header = "I'm " + score + "% sure that you're a " + breed + " !"
             }

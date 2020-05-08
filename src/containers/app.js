@@ -29,6 +29,11 @@ class App extends Component {
         if(e.target.files[0]) {
             const image = e.target.files[0];
             this.setState(() => ({image}));
+            this.setState({
+                    score:"",
+                    breed:""
+                    })
+            let header = "";
 
         const name = new Date().getHours().toLocaleString() + new Date().getMinutes().toLocaleString() + new Date().getSeconds().toLocaleString()  + `${image.name}`;
         const uploadTask = storage.ref(name).put(image);

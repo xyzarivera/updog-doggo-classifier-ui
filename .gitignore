@@ -71,3 +71,4 @@ yarn-error.log
 # Firebase
 .firebase/
 .firebaserc
+src/firebase

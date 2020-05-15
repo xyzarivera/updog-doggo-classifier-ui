@@ -1,6 +1,6 @@
-# 🐶 BORK!
+# 🐶 UPDOG!
 
-**BORK!** is a web-based computer vision application that identifies the breed of a dog in an uploaded photo.
+**UPDOG!** is a web-based computer vision application that identifies the breed of a dog in an uploaded photo.
 
 This is our revalida for the Google Cloud Platform Developer Stint of the AC2E program.
 

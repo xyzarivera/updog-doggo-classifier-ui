@@ -7,7 +7,7 @@ import Contributors from "../containers/contributors"
 
 export default () => (
     <div>
-        <GithubCorner url="https://github.com/xyzarivera/doggo-classifier-ui"/>
+        <GithubCorner url="https://github.com/xyzarivera/updog-doggo-classifier-ui/"/>
         <Navbar/>
         <App/>
         <Details/>

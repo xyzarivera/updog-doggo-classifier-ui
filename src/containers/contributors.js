@@ -21,6 +21,7 @@ export default () => (
                     team="GCPeepz-A"
                     git="https://github.com/saibunny"
                     gitname="saibunny"
+                    linkedin=""
                     email="zkftan@globe.com.ph" />
                 <PeopleCard  
                     imgsrc={dp_faust}
@@ -29,6 +30,7 @@ export default () => (
                     team="GCPeepz-A"
                     git="https://github.com/faustroxas"
                     gitname="faustroxas"
+                    linkedin="https://www.linkedin.com/in/randito-faustino-roxas-9631ab14b/"
                     email="zrfroxas@globe.com.ph" />
                 <PeopleCard
                     imgsrc={dp_xyza}
@@ -37,6 +39,7 @@ export default () => (
                     team="GCPeepz-A"
                     git="https://github.com/xyzarivera"
                     gitname="xyzarivera"
+                    linkedin=""
                     email="zxlrivera@globe.com.ph" />
             </div>
         </Layout>

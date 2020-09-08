@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/global.css"
 
 export default (props) => (
-    <div className="max-w-sm bg-color-whiteish-darker shadow-lg rounded-lg overflow-hidden my-4">
+    <div className="w-1/3 md:w-1/3 max-w-sm bg-color-whiteish-darker shadow-lg rounded-lg overflow-hidden my-4">
         <img className="w-full h-56 object-cover object-center" src={props.imgsrc} alt="avatar"/>
         <div className="py-4 px-6">
             <h1 className="text-2xl font-semibold dark-reddish-text">{props.name}</h1>
@@ -22,9 +22,9 @@ export default (props) => (
                 </a>
             </div>
             <div className="flex items-center mt-4 dark-reddish-text">
-                <img src="https://img.icons8.com/material-sharp/24/000000/github.png" alt="profile"/>
+                <img src="https://img.icons8.com/material-sharp/24/000000/github.png" alt="github"/>
                 <h1 className="px-2 text-sm">
-                    <a href={props.git} rel="noopener noreferrer" target="_blank"> 
+                    <a href={"https://github.com/" + props.gitname} rel="noopener noreferrer" target="_blank"> 
                         {props.gitname}
                     </a>
                 </h1>

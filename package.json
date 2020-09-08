@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "doggo-classifier-ui",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "AC2E - GCP Dev Stint Revalida: UI Codebase",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -14,8 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "firebase": "^7.14.2",
+    "firebase": "^7.19.1",
     "gatsby": "^2.21.0",
     "gatsby-plugin-postcss": "^2.3.0",
     "package.json": "^2.0.1",
@@ -28,9 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/xyzarivera/doggo-classifier-ui"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/xyzarivera/doggo-classifier-ui/issues"
   }
 }
